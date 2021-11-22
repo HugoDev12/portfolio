@@ -1,0 +1,28 @@
+
+header, footer {
+    height: 22vh;
+    color: white;
+}
+
+.Images {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+
+}
+
+.backGroundImg {
+    position: relative;
+}
+
+.Main {
+    height: 50vh;
+    color: white;
+}
+
+#GroupLinks>a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 1em 0 1em;
+}
