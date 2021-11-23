@@ -1,10 +1,11 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer(){
-    return <footer className="container d-flex flex-column justify-content-center align-items-center">
-    <ul>
-        <li>twitter</li>
-        <li>linkedin</li>
-        <li>github</li>
+    return <footer className="d-flex align-items-center">
+    <ul  className="container-fluid d-flex flex-row justify-content-around">
+        <li><FontAwesomeIcon icon={['fab', 'twitter']} size="lg"/></li>
+        <li><FontAwesomeIcon icon={['fab', 'linkedin']} size="lg"/></li>
+        <li><FontAwesomeIcon icon={['fab', 'github']} size="lg"/></li>
     </ul>
 </footer>
 }
