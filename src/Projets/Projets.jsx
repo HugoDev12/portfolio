@@ -1,29 +1,43 @@
 import { Link } from "react-router-dom";
 import Footer from "../Template/Footer";
-import Header from "../Template/Header";
-import ProjetBg from "../Template/temps-orageux.jpg";
-import Rain from "../Template/rain.png";
+import Cards from "../Cards/Cards";
+// import Header from "../Template/Header";
+// import ProjetBg from "../Template/temps-orageux.jpg";
+// import Rain from "../Template/rain.png";
 
 
 function Projets(){
 
     return <>
-    <div className="backGroundImg">
+    {/* <div className="backGroundImg">
         <img className="Images" src={ProjetBg} alt="Image d'une vue d'au dessus des nuages" />
-        {/* <img id="Rain" src={Rain} alt="Image de pluie"/> */}
-    </div>
-    <Link to="/portfolio" className="btn btn-secondary backBtn">Retour</Link>
-    <Header/>
-    <main className="Main container-fluid mt-2 row align-items-center justify-content-center">
-        <div className="cards text-center col-12 col-lg-2">Memory Game</div>
-        <div className="cards text-center col-12 col-lg-2">MaBanque</div>
-        <div className="cards text-center col-12 col-lg-2">Pendu</div>
-        <div className="cards text-center col-12 col-lg-2">React</div>
-        <div className="cards text-center col-12 col-lg-2">Terre de Geek</div>
+        <img id="Rain" src={Rain} alt="Image de pluie"/>
+    </div> */}
+    <header className="d-flex flex-column justify-content-center align-items-center"  id="ProjetsTitle">
+        <Link to="/portfolio" className="btn btn-secondary backBtn">Retour</Link>
+        <h1>Réalisations</h1>
+    </header>
+    <main className="container-fluid row gy-4 gy-lg-5 align-items-center justify-content-center flex-wrap my-5" id="ProjetsMain">
+        <Cards title="Memory game" id="Memory" 
+        text="Réalisation d'un jeu de cartes où l'on doit trouver les paires dans un temps imparti."
+        link="https://github.com/HugoDev12/jeu_des_pairs"/>
+        <Cards title="MaBanque" id="Bank"
+        text="Création d'un site en mobile first, avec différentes pages."
+        link="https://github.com/HugoDev12/MaBanque"/>
+        <Cards title="Pendu" id="Pendu"
+        text="Réalisation d'un jeu où l'on doit trouver les lettres d'un mot en un nombre de coups imparti."
+        link="https://github.com/HugoDev12/pendu"/>
+        <Cards title="React" id="React"
+        text="Découverte de React avec la récupération d'une API Rest (Swapi)."
+        link="https://github.com/HugoDev12/projet_react_s10"/>
+        <Cards title="Terre de Geek" id="Geek"
+        text="Premier site responsive à l'aide de bootstrap."
+        link="https://github.com/HugoDev12/terre_de_geek"/>
     </main>
-    <Footer/>
+    <div id="ProjetsFoot"><Footer/></div>
     </>
 }
+
 
 export default Projets;
 
