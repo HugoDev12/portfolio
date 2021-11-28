@@ -1,8 +1,8 @@
-import Projets from "./Projets";
+import Display from "./Display";
 
 
 function ProjetsDatas(){
-    let contents =
+    const CONTENTS =
     [
         "Projet sur un site vitrine responsive en HTML/CSS.",
         "Création d'un site responsive sur la base de bootstrap en utilisant une API REST.",
@@ -11,7 +11,15 @@ function ProjetsDatas(){
         "Premier site réalisé à l'aide de React JS en utilisant l'API REST de Swapi."
     ]
 
-    let layerColors = 
+    const GITLINKS = [
+        "https://github.com/HugoDev12/terre_de_geek",
+        "https://github.com/HugoDev12/MaBanque",
+        "https://github.com/HugoDev12/pendu",
+        "https://github.com/HugoDev12/jeu_des_pairs",
+        "https://github.com/HugoDev12/projet_react_s10"
+    ]
+
+    const LAYERCOLORS = 
     [
         "rgba(255, 255, 255, 0.85)",
         "rgba(255, 253, 151, 0.85)",
@@ -20,10 +28,11 @@ function ProjetsDatas(){
         "rgba(240, 125, 255, 0.85)"
     ]
 
-    let boxes = ["box1","box2","box3","box4","box5"]
-    let names = ["Terre de Geek", "Gestio Banque", "Jeu du Pendu", "Jeu des Paires", "Swapi"]
+    const BOXES = ["box1","box2","box3","box4","box5"]
+    const NAMES = ["Terre de Geek", "Gestio Banque", "Jeu du Pendu", "Jeu des Paires", "Swapi"]
+    const DISPLAY = "";
 
-    return <Projets contents={contents} layerColors={layerColors} boxes={boxes} names={names}/>
+    return <Display contents={CONTENTS} layerColors={LAYERCOLORS} boxes={BOXES} names={NAMES} links={GITLINKS} linkDisplay={DISPLAY}/>
 }
 
 export default ProjetsDatas;

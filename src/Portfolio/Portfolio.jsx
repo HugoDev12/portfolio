@@ -5,12 +5,9 @@ import Footer from "../Template/Footer";
 function Portfolio(){
     return <>
     <Header/>
-    <main className="container mt-2 d-flex flex-column justify-content-around align-items-center">
-        <div>
-            <Link to="/projets">Projets</Link>
-            <Link to="/biographie">Biographie</Link>
-            <Link to="/test">Test</Link>
-        </div>
+    <main className="container d-flex flex-column justify-content-center align-items-center">
+        <Link to="/projets" className="links mb-4">Projets</Link>
+        <Link to="/biographie" className="links mt-4">Biographie</Link>
     </main>
     <Footer/> 
     </>

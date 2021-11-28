@@ -1,20 +1,26 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Mailto from "./Mailto";
-
+import SocialIcons from "./SocialIcons";
+import Spaceship from "../Projets/space-ship4.png";
 
 
 function Footer(){
     return <footer className="container d-flex align-items-center justify-content-around flex-row">
-        <div className="CopyRight d-flex flex-row">
+        <div className="d-flex flex-row">
         <FontAwesomeIcon className="Icons mx-1 mt-3" icon={['far', 'copyright']}/>
-        <p className="mt-3">2021</p>
+        <p className="mt-3" id="Date">2021</p>
         </div>
-        <Mailto id="Contact" mailto="mailto:occelli.hugo@hotmail.fr"/>
     <ul className="d-flex flex-row justify-content-around  mt-3">
-        <li><FontAwesomeIcon className="Icons mx-1 mx-lg-0" icon={['fab', 'twitter']}/></li>
-        <li><FontAwesomeIcon className="Icons mx-1 mx-lg-0" icon={['fab', 'linkedin']}/></li>
-        <li><FontAwesomeIcon className="Icons mx-1 mx-lg-0" icon={['fab', 'github']}/></li>
+        <li><SocialIcons link="https://twitter.com/HugoOccelli"
+            icon={<FontAwesomeIcon className="Icons mx-1 mx-lg-0" icon={['fab', 'twitter']}/>}/>
+        </li>
+        <li className="mx-1 mx-lg-2"><SocialIcons link="https://www.linkedin.com/in/hugo-occelli-b6085721b/"
+            icon={<FontAwesomeIcon className="Icons mx-1 mx-lg-0" icon={['fab', 'linkedin']}/>}/>
+        </li>
+        <li><SocialIcons link="https://github.com/HugoDev12"
+            icon={<FontAwesomeIcon className="Icons mx-1 mx-lg-0" icon={['fab', 'github']}/>}/>
+        </li>
     </ul>
+    <img src={Spaceship} id="Spaceship" alt="#" width="250px" />
 </footer>
 }
 
