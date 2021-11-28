@@ -1,11 +1,13 @@
 import { Route, Routes } from 'react-router';
 import Portfolio from './Portfolio/Portfolio';
 import Biographie from './Biographie/Biographie';
-import Projets from './Projets/Projets';
+import ProjetsDatas from './Projets/ProjetsDatas';
+import Test from './Portfolio/Test';
 import './App.css';
-import './Template/Template.css';
 import './FontAwesome.js';
-import $ from 'jquery';
+// import $ from 'jquery';
+import './Projets/Stars.css';
+import './Projets/StarBubble.css';
 
 
 
@@ -16,25 +18,26 @@ function App() {
       <Route path="/" element={<Portfolio/>}/>
       <Route path="/portfolio" element={<Portfolio/>}/>
       <Route path="/biographie" element={<Biographie/>}/>
-      <Route path="/projets" element={<Projets/>}/>
+      <Route path="/projets" element={<ProjetsDatas/>}/>
+      <Route path="/test" element={<Test/>}/>
     </Routes>
     </>
   );
 }
 
-$(".Detail").each(function(){
-  $(this).on("click", function(){
-    $(this).parent().addClass("clicked");
-    console.log("test");
-    setTimeout(() => {
-      $(this).parent().next().removeClass("visually-hidden");
-      $(this).parent().hide();
-      // $(this).parent().addClass("visually-hidden");
-    }, 1000);
-  })
-})
-
 export default App;
+
+// $(".Detail").each(function(){
+//   $(this).on("click", function(){
+//     $(this).parent().addClass("clicked");
+//     console.log("test");
+//     setTimeout(() => {
+//       $(this).parent().next().removeClass("visually-hidden");
+//       $(this).parent().hide();
+//       // $(this).parent().addClass("visually-hidden");
+//     }, 1000);
+//   })
+// })
 
 // $(function(){
 //   var vi = $(window).width();
