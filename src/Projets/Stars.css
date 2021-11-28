@@ -1,0 +1,192 @@
+
+/* -------------------------------------------  Design  ------------------------------------ */
+@font-face {
+    font-family: 'Techno';
+    src: url(../Fonts/techno_hideo.ttf);
+}
+
+body {
+    background-image: url('./background.png');
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#backBtn {
+    font-family: StoryTime;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    padding: 0.5em 1em;
+    border: 2px solid white;
+    border-radius: 25%;
+    font-size: 1.2em;
+}
+
+/* body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.25);
+} */
+
+h3 {
+    font-family: Techno;
+    color: red;
+    font-size: smaller;
+    margin: auto;
+}
+
+.box {
+    position: absolute;
+    width: 6rem;
+    height: 5rem;
+}
+
+.box1 {
+    top: 30%;
+    left: 40%;
+}
+.box2 {
+    top: 42%;
+    right: 35%;
+}
+.box3 {
+    bottom: 37%;
+    left: 20%;
+}
+.box4 {
+    bottom: 25%;
+    left: 40%;
+}
+.box5 {
+    bottom: 15%;
+    left: 65%;
+}
+
+.star-box{
+    height: 100%;
+    width: 75%;
+}
+
+.star-container {
+    display: block;
+    width: 40%;
+    height: 30%;
+}
+
+.left-top{
+    border-top: 1px solid;
+    border-image : linear-gradient(to right, red, rgb(0, 0, 0)) 1; 
+}
+
+.right-top {
+    border-top: 1px solid;
+    border-image : linear-gradient(to left, red, rgb(0, 0, 0)) 1; 
+}
+
+.left-bot {
+    border-bottom: 1px solid red;
+    border-image : linear-gradient(to right, red, rgb(0, 0, 0)) 1; 
+}
+.right-bot {
+    border-bottom: 1px solid red;
+    border-image : linear-gradient(to left, red, rgb(0, 0, 0)) 1; 
+}
+
+.left-top, .left-bot {
+    border-left: 1px solid red;
+}
+.right-top, .right-bot {
+    border-right: 1px solid red;
+}
+
+.star {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: animate 8s ease-in-out infinite;
+    margin-top: 2em;
+}
+
+.star1 {
+    animation-delay: -2s;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px 20px rgba(255, 255, 255, 0.85);
+}
+
+.star2 {
+    animation-delay: -1s;
+    background: #fff679;
+    box-shadow: 0px 0px 25px 20px rgba(255, 253, 151, 0.85);
+}
+.star3 {
+    animation-delay: 0.5s;
+    background: #0044ff;
+    box-shadow: 0px 0px 25px 20px rgba(100, 180, 255, 0.85);
+}
+.star4 {
+    animation-delay: 1s;
+    background: #ff7525;
+    box-shadow: 0px 0px 25px 20px rgba(255, 185, 94, 0.85);
+}
+.star5 {
+    animation-delay: -2s;
+    background: #ae00ff;
+    box-shadow: 0px 0px 25px 20px rgba(240, 125, 255, 0.85);
+}
+
+@keyframes animate {
+    0%,20%,40%,60%,80%,100% {
+        opacity: 0.5;
+    }
+
+    10%,30%,50%,70%,90% {
+        opacity: 1;
+    }
+} 
+
+@media screen and (min-width: 720px) {
+    #backBtn {
+       font-size: larger;
+       left: 45%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    #backBtn {
+        font-size: x-large;
+    }
+
+    .box {
+        width: 8rem;
+        height: 6.5rem;
+    }
+
+    h3 {
+        font-size: large;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .box {
+        width: 10rem;
+        height: 6rem;
+    }
+
+    h3 {
+        font-size: large;
+    }
+}
+
+
+
+
