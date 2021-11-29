@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Bombing';
+  src: url(./Fonts/Bombing.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Blade';
+  src: url(./Fonts/Blade_2.ttf) format('truetype');
+}
+
+
+@font-face {
+  font-family: 'OriginTech';
+  src: url(./Fonts/OriginTech.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'StoryTime';
+  src: url(./Fonts/Storytime.ttf) format('truetype');
+}
