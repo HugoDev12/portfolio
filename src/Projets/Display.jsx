@@ -1,28 +1,22 @@
-import { icon } from '@fortawesome/fontawesome-svg-core';
 import { useState } from 'react'; 
 import { Link } from 'react-router-dom';
 import Footer from '../Template/Footer';
 import SocialIcons from '../Template/SocialIcons';
-import StarBubble from './StarBubble';
 
 function Display({contents, layerColors, boxes, names, links, linkDisplay}){
-
     let [click, setClick] = useState(false)
     let [index, setIndex] = useState(null)
-
     function getProps(index){
         setClick(true)
         setIndex(index)
     }
     let boxTitles = names.map(title => title)
-
     if(click)
     {
         function handleClick(e){
             e.preventDefault();
             setClick(false)
         }
-
         return (
             <section id="Layer" className="d-flex justify-content-center align-items-center">
                 <div id="Content" style={{backgroundColor: layerColors[index]}} className="d-flex flex-column justify-content-center align-items-center">
@@ -35,7 +29,6 @@ function Display({contents, layerColors, boxes, names, links, linkDisplay}){
                 </div>
             </section>)
     }   
-
     return <div className="d-flex justify-content-between align-items-end" style={{height: '100vh'}}>
     <Link to="/portfolio" id="backBtn">Retour</Link>
     {boxes.map((box,index) => {
@@ -53,6 +46,5 @@ function Display({contents, layerColors, boxes, names, links, linkDisplay}){
     <Footer/>
     </div>
 }
-
 export default Display;
 
