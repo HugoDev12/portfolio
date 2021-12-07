@@ -1,7 +1,9 @@
+import { Callbacks } from 'jquery';
 import { useState } from 'react'; 
 import { Link } from 'react-router-dom';
 import Footer from '../Template/Footer';
 import SocialIcons from '../Template/SocialIcons';
+import Memory from '../Template/memory-game.png';
 
 function Display({contents, layerColors, boxes, names, links, linkDisplay}){
     let [click, setClick] = useState(false)
@@ -19,10 +21,10 @@ function Display({contents, layerColors, boxes, names, links, linkDisplay}){
         }
         return (
             <section id="Layer" className="d-flex justify-content-center align-items-center">
-                <div id="Content" style={{backgroundColor: layerColors[index]}} className="d-flex flex-column justify-content-center align-items-center">
-                    <button className="mb-5" id="topBtn" onClick={handleClick}>Retour</button>
-                    <h2 className="mb-5">{names[index]}</h2>
-                    <p className="mb-5 text-center" id="Bubble">{contents[index]}</p>
+                <div id="Content" style={{background: layerColors[index]}} className="d-flex flex-column justify-content-center align-items-center">
+                    <button className="mb-1 mb-md-5" id="topBtn" onClick={handleClick}>Retour</button>
+                    <h2 className="mb-md-5">{names[index]}</h2>
+                    <p className="mb-md-5 text-center" id="Bubble">{contents[index]}</p>
                     <aside className={linkDisplay} id="gitLink">
                     <SocialIcons link={links[index]} icon="Lien GitHub"/>
                     </aside>

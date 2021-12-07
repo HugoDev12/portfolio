@@ -11,19 +11,21 @@ function BioDatas(){
         "J'aime suivre l'actualité et les nouveautés technologiques."
     ]
 
-    const LAYERCOLORS = 
+    const LAYERCOLORS =
     [
-        "rgba(255, 255, 255, 0.85)",
-        "rgba(255, 253, 151, 0.85)",
-        "rgba(100, 180, 255, 0.85)",
-        "rgba(255, 185, 94, 0.85)",
-        "rgba(240, 125, 255, 0.85)"
+        "radial-gradient(circle at 20% 20%, #ffffff, #000)",
+        "radial-gradient(circle at 20% 20%, #fffd95, #000)",
+        "radial-gradient(circle at 20% 20%, #64b4ff, #000)",
+        "radial-gradient(circle at 20% 20%, #ffb95e, #000)",
+        "radial-gradient(circle at 20% 20%, #f07dff, #000)"
     ]
+
+    const IMAGES = ["none","none","none","none","none"]
 
     const BOXES = ["box1","box2","box3","box4","box5"]
     const NAMES = ["Qui suis-je?", "Mes Passions", "Mon Caractere", "Motivation", "Autres..."]
     const GITLINKS = ["#","#","#","#","#"]
-    const DISPLAY = "visually-hidden";
+    const DISPLAY = "visually-hidden"
     
     return <Display contents={CONTENTS} layerColors={LAYERCOLORS} boxes={BOXES} names={NAMES} links={GITLINKS} linkDisplay={DISPLAY}/>
 

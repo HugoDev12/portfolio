@@ -9,10 +9,21 @@
 }
 
 #Content {
-    height: 60%;
-    width: 80%;
-    border-radius: 50%;
+    height: 55%;
+    width: 55%;
 }
+/* 
+#Content::before {
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 55%;
+    background-image: url('../Template/memory-game.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.2;
+} */
 
 #Bubble {
     width: 50%;
@@ -21,17 +32,25 @@
 
 #gitLink>a {
     font-family: StoryTime;
-    color: black;
+    color: white;
     border: 2px solid red;
     padding: 0.5em 1.5em;
 }
 
+#gitLink {
+    overflow: visible;
+}
+
 #topBtn {
     font-family: Techno;
-    color: black;
+    color: white;
     background-color: transparent;
     border: none;
     font-size: larger;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 0.5em 1em;
+
 }
 
 
@@ -47,20 +66,32 @@ p {
 
 @media screen and (min-width: 720px) {
     #Content {
-        height: 80%;
-        width: 60%;
+        height: 50%;
+        border-radius: 50%;
     }
     #gitLink>a {
         font-size: larger;
     }
 }
 
-@media screen and (min-width: 1300px) {
+
+@media screen and (min-width: 1000px) {
     #Content {
-        height: 80%;
-        width: 50%;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 1224px) {
+    #Content {
+        height: 70%;
     }
     #gitLink>a {
         font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #Content {
+        width: 40%;
     }
 }
