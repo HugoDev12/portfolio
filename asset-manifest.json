@@ -1,30 +1,31 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2be432a7.chunk.css",
-    "main.js": "/portfolio/static/js/main.71d95a1c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.71d95a1c.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.fc906537.chunk.css",
+    "main.js": "/portfolio/static/js/main.a6e3267c.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a6e3267c.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.3a088304.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.3a088304.js.map",
     "static/css/2.a75f5a2c.chunk.css": "/portfolio/static/css/2.a75f5a2c.chunk.css",
-    "static/js/2.d735bc6e.chunk.js": "/portfolio/static/js/2.d735bc6e.chunk.js",
-    "static/js/2.d735bc6e.chunk.js.map": "/portfolio/static/js/2.d735bc6e.chunk.js.map",
+    "static/js/2.783d01d1.chunk.js": "/portfolio/static/js/2.783d01d1.chunk.js",
+    "static/js/2.783d01d1.chunk.js.map": "/portfolio/static/js/2.783d01d1.chunk.js.map",
     "static/js/3.773fe15a.chunk.js": "/portfolio/static/js/3.773fe15a.chunk.js",
     "static/js/3.773fe15a.chunk.js.map": "/portfolio/static/js/3.773fe15a.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.a75f5a2c.chunk.css.map": "/portfolio/static/css/2.a75f5a2c.chunk.css.map",
-    "static/css/main.2be432a7.chunk.css.map": "/portfolio/static/css/main.2be432a7.chunk.css.map",
-    "static/js/2.d735bc6e.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d735bc6e.chunk.js.LICENSE.txt",
+    "static/css/main.fc906537.chunk.css.map": "/portfolio/static/css/main.fc906537.chunk.css.map",
+    "static/js/2.783d01d1.chunk.js.LICENSE.txt": "/portfolio/static/js/2.783d01d1.chunk.js.LICENSE.txt",
     "static/media/index.css": "/portfolio/static/media/OriginTech.91ec0432.ttf",
     "static/media/StarBubble.css": "/portfolio/static/media/Storytime.a3beed22.ttf",
     "static/media/Stars.css": "/portfolio/static/media/techno_hideo.401f01a8.ttf",
+    "static/media/memory-game.c16c6c21.png": "/portfolio/static/media/memory-game.c16c6c21.png",
     "static/media/space-ship4.baba0c15.png": "/portfolio/static/media/space-ship4.baba0c15.png",
     "static/media/Template.css": "/portfolio/static/media/tech-frame-transparent-background.60f67347.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3a088304.js",
     "static/css/2.a75f5a2c.chunk.css",
-    "static/js/2.d735bc6e.chunk.js",
-    "static/css/main.2be432a7.chunk.css",
-    "static/js/main.71d95a1c.chunk.js"
+    "static/js/2.783d01d1.chunk.js",
+    "static/css/main.fc906537.chunk.css",
+    "static/js/main.a6e3267c.chunk.js"
   ]
 }
