@@ -20,7 +20,7 @@ function BioDatas(){
         "radial-gradient(circle at 20% 20%, #f07dff, #000)"
     ]
 
-    const IMAGES = ["none","none","none","none","none"]
+    // const IMAGES = ["none","none","none","none","none"]
 
     const BOXES = ["box1","box2","box3","box4","box5"]
     const NAMES = ["Qui suis-je?", "Mes Passions", "Mon Caractere", "Motivation", "Autres..."]
